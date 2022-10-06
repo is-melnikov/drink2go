@@ -13,13 +13,13 @@
   </head>
   <body class="page__body">
     <header class="page__header main-header">
-      <a class="logo" href="index.html">
+      <a class="main-header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="">
-          <source media="(min-width: 768px)" srcset="">
-          <img class="logo__image" src="img/logo.svg" width="32" height="36" alt="Логотип сайта drink2go.">
+          <source media="(min-width: 1440px)" srcset="./img/logo-max.svg">
+          <source media="(min-width: 768px)" srcset="./img/logo-average.svg">
+          <img class="logo__image" src="img/logo-min.svg" width="32" height="36" alt="Логотип сайта drink2go.">
         </picture>
-        <p class="logo__text">Интернет-магазин кофейных напитков</p>
+        <p class="logo__text">Интернет-магазин <br>кофейных напитков</p>
       </a>
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
         <button class="navigation__toggle" type="button">
@@ -43,12 +43,12 @@
         <ul class="navigation__user-menu user-menu">
           <li class="user-menu__item">
             <a class="user-menu__link user-menu__link--user" href="#">
-              <span class="visually-hidden">Авторизоваться</span>
+              <span class="user-menu__text">Войти</span>
             </a>
           </li>
           <li class="user-menu__item">
             <a class="user-menu__link user-menu__link--basket" href="#">
-              <span class="visually-hidden">Корзина</span>
+              <span class="user-menu__text">Корзина</span>
             </a>
           </li>
         </ul>
@@ -354,7 +354,7 @@
     <footer class="page__main-footer main-footer">
       <div class="main-footer__wrapper">
         <a class="logo" href="#">
-          <img class="logo__image" src="./img/logo-footer-mobile.svg" width="82" height="36" alt="Логотип сайта drink2go.">
+          <img class="logo__image" src="./img/logo-average.svg" width="82" height="36" alt="Логотип сайта drink2go.">
           <p class="logo__text">Интернет-магазин кофейных напитков</p>
         </a>
         <section class="social">

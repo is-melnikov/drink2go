@@ -3,9 +3,8 @@
 }
 
 .user-menu__link {
-  width: 60px;
-  height: 60px;
   display: block;
+  padding: 30px;
 
   &--user,
   &--basket {
@@ -19,5 +18,20 @@
 
   &--basket {
     background-image: url("../img/basket.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    &--user,
+    &--basket {
+      background-position: left;
+    }
+  }
+}
+
+.user-menu__text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

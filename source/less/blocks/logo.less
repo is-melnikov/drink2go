@@ -1,5 +1,8 @@
 .logo {
-  margin-right: auto;
+  @media (min-width: @desktop-width) {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .logo__text {
@@ -7,5 +10,19 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 20px;
+  }
+}
+
+.logo__image {
+  @media (min-width: @tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
   }
 }
