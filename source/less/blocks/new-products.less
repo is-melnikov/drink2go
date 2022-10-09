@@ -7,6 +7,10 @@
     min-height: 828px;
     background-image: linear-gradient(#f3ebe1 75%, #ffffff 75% 100%);
   }
+
+  @media (min-width: @desktop-width) {
+    background-image: none;
+  }
 }
 
 .new-products__card {
@@ -27,6 +31,20 @@
     width: 476px;
     height: 476px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 600px;
+    height: 600px;
+    left: 400px;
+    bottom: 84px;
+  }
+}
+
+.new-products__container {
+  @media (min-width: @desktop-width) {
+    width: 625px;
+    margin: 180px 0 0 680px;
+  }
 }
 
 .new-products__subtitle {
@@ -41,6 +59,12 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
 }
 
 .new-products__description {
@@ -53,6 +77,10 @@
     width: 608px;
     font-size: 20px;
     line-height: 32px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0 auto 40px;
+    }
   }
 }
 
