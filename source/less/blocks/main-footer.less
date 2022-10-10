@@ -1,8 +1,38 @@
+.main-footer {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 0 40px;
+  }
+}
+
 .main-footer__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 20px 15px;
   border-bottom: 1px solid #f0ebff;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.main-footer__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 170px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.main-footer__logo-text {
+  margin: 0;
 }

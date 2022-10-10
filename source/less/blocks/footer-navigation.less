@@ -1,6 +1,21 @@
+.footer-navigation__container {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .footer-navigation {
   padding: 20px 20px 16px;
   border-bottom: 1px solid #f0ebff;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 49px 20px 16px;
+  }
 }
 
 .footer-navigation__subtitle {
