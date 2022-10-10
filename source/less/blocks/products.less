@@ -1,9 +1,29 @@
-.products__sorting-text {
-  font-weight: 600;
+.products {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
 
-.products__sorting {
+.products__sorting-wrapper {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+  }
+}
+
+.products__sorting-text {
+  margin-right: 18px;
+  font-weight: 600;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .products__list {

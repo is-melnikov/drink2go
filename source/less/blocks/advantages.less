@@ -1,5 +1,13 @@
 .advantages {
-  padding: 50px 20px 60px;
+  padding: 50px 20px 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .advantages__subtitle {
@@ -10,15 +18,28 @@
 
 .advantages__title {
   margin: 0 0 36px;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 80px;
+  }
 }
 
 .advantages__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 30px;
+  }
 }
 
 .advantages__item {
+  margin-bottom: 35px;
   padding: 66px 0 0;
   text-align: center;
   background-position: top;
@@ -39,6 +60,19 @@
   &--ecology {
     background-image: url("../img/ecology.svg");
   }
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    width: 47%;
+    margin-bottom: 0;
+    padding: 0 0 0 72px;
+    background-position: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 23%;
+    margin-bottom: 0;
+    padding: 76px 0 0;
+  }
 }
 
 .advantages__small-title {
@@ -46,9 +80,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 10px;
+  }
 }
 
 .advantages__description {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
 }

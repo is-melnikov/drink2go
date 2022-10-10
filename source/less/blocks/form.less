@@ -1,3 +1,14 @@
+.form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .form__fieldset {
   margin: 0 0 25px;
   padding: 0;
@@ -5,6 +16,10 @@
 
   &:nth-child(3) {
     margin: 0 0 35px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 40px;
   }
 }
 
@@ -14,11 +29,30 @@
   font-weight: 600;
 }
 
+.form__buttons {
+  display: flex;
+  margin: 0 auto 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
 .form__submit-button {
   display: block;
   margin: 0 auto 24px;
   padding: 11px 14px;
   font-size: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding: 8px 3px;
+    font-size: 14px;
+    margin: 0 30px 0 0;
+  }
 }
 
 .form__reset-button {
@@ -28,4 +62,21 @@
   font-size: 14px;
   background-color: #ffffff;
   color: @base-primary-color;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 8px 5px;
+  }
+}
+
+.form__fieldset__range {
+  @media (min-width: @tablet-width) {
+    margin-right: 21px;
+  }
+}
+
+.form__fieldset__radio {
+  @media (min-width: @tablet-width) {
+    margin-right: 39px;
+  }
 }
