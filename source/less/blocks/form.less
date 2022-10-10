@@ -1,10 +1,11 @@
 .form {
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: column;
   }
 }
@@ -34,6 +35,7 @@
   margin: 0 auto 40px;
 
   @media (min-width: @tablet-width) {
+    grid-column: 1/4;
     margin: 0 auto 44px;
   }
 
@@ -70,8 +72,12 @@
 }
 
 .form__fieldset__range {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
     margin-right: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+
   }
 }
 

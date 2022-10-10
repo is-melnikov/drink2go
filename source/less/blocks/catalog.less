@@ -12,7 +12,10 @@
 }
 
 .catalog__container {
-  display: flex;
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
 }
 
 .catalog__subtitle {
