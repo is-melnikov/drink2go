@@ -11,7 +11,7 @@
 }
 
 .form__fieldset {
-  margin: 0 0 25px;
+  margin: 0 0 22px;
   padding: 0;
   border: none;
 
@@ -25,16 +25,24 @@
 }
 
 .form__title {
-  margin-bottom: 22px;
+  margin-bottom: 32px;
   padding: 0;
   font-weight: 600;
 }
 
+.form__title-fieldset-radio {
+  margin-bottom: 21px;
+}
+
+.form__title-fieldset-checkboxes {
+  margin-bottom: 20px;
+}
+
 .form__buttons {
-  display: flex;
-  margin: 0 auto 40px;
+  margin: 0 auto 43px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     grid-column: 1/4;
     margin: 0 auto 44px;
   }
@@ -46,8 +54,8 @@
 
 .form__submit-button {
   display: block;
-  margin: 0 auto 24px;
-  padding: 11px 14px;
+  margin: 0 auto 29px;
+  padding: 11px 14px 16px;
   font-size: 13px;
 
   @media (min-width: @tablet-width) {
@@ -74,10 +82,6 @@
 .form__fieldset__range {
   @media (min-width: @tablet-width) and (max-width: 1439px) {
     margin-right: 21px;
-  }
-
-  @media (min-width: @desktop-width) {
-
   }
 }
 
