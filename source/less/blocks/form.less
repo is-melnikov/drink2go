@@ -31,7 +31,7 @@
     margin: 0 0 32px;
 
     &:nth-child(3) {
-      margin: 0 0 38px;
+      margin: 0 0 36px;
     }
   }
 }
@@ -70,6 +70,10 @@
 
 .form__buttons {
   margin: 0 auto 43px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
