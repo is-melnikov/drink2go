@@ -122,14 +122,17 @@
 
 .navigation__user-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 38px 0 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    min-width: 120px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 258px;
     margin-right: -30px;
   }
 }
