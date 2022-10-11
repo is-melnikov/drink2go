@@ -26,6 +26,14 @@
       margin: 0 0 35px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 32px;
+
+    &:nth-child(3) {
+      margin: 0 0 38px;
+    }
+  }
 }
 
 .form__title {
@@ -41,6 +49,10 @@
 .form__range-slider {
   @media (min-width: @tablet-width) {
     margin-left: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
