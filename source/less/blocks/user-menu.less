@@ -2,6 +2,14 @@
   list-style-type: none;
 }
 
+.user-menu__item {
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
+
 .user-menu__link {
   display: block;
   padding: 30px;
@@ -10,6 +18,8 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 
   &--user,
   &--basket {
@@ -28,7 +38,7 @@
   @media (min-width: @desktop-width) {
     &--user,
     &--basket {
-      background-position: left;
+      background-position: 6px 30px;
     }
   }
 }
