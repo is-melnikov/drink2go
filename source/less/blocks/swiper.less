@@ -1,0 +1,63 @@
+.swiper__button-prev,
+.swiper__button-next {
+  position: absolute;
+
+  width: 11px;
+  height: 20px;
+  background-image: url("../img/arrow-slider.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: 308px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 345px;
+  }
+}
+
+.swiper__button-prev {
+  left: 4px;
+
+  @media (min-width: @tablet-width) {
+    left: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 33px;
+  }
+}
+
+.swiper__button-next {
+  right: 4px;
+  transform: rotate(180deg);
+
+  @media (min-width: @tablet-width) {
+    right: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 35px;
+  }
+}
+
+.swiper__pagination {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 62px;
+  height: 4px;
+  margin-right: 8px;
+  border-radius: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: @base-primary-color;
+}

@@ -9,6 +9,8 @@
     <link rel="preload" href="./fonts/montserrat-extrabold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-semibold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/leaflet.css"/>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
@@ -62,64 +64,79 @@
       <section class="new-products">
         <div class="new-products__container">
           <h2 class="visually-hidden">Наши новинки</h2>
-          <div class="new-products__slider">
-            <div class="new-products__card">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/slider-flat-white-desktop.png">
-                <source media="(min-width: 768px)" srcset="./img/slider-flat-white-tablet.png">
-                <img class="new-products__image" src="./img/slider-flat-white.png" width="280" height="280" alt="Кофейный напиток Декаф Флэт Уайт.">
-              </picture>
-              <div class="new-products__card-container">
-                <p class="new-products__subtitle subtitle">Новинка!</p>
-                <h3 class="new-products__title">Декаф Флэт Уайт</h3>
-                <p class="new-products__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня
-                </p>
-                <div class="new-products__wrapper">
-                  <div class="new-products__price-wrapper">
-                    <span class="new-products__old-price">295₽</span>
-                    <span class="new-products__price">225₽</span>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide new-products__card">
+                <div class="new-products__image-container">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/slider-flat-white-desktop.png">
+                    <source media="(min-width: 768px)" srcset="./img/slider-flat-white-tablet.png">
+                    <img class="new-products__image" src="./img/slider-flat-white.png" width="280" height="280" alt="Кофейный напиток Декаф Флэт Уайт.">
+                  </picture>
+                </div>
+                <div class="new-products__card-container">
+                  <p class="new-products__subtitle subtitle">Новинка!</p>
+                  <h3 class="new-products__title">Декаф Флэт Уайт</h3>
+                  <p class="new-products__description">Свежесваренный кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком — то, что нужно<br> для расслабления после тяжёлого рабочего дня
+                  </p>
+                  <div class="new-products__wrapper">
+                    <div class="new-products__price-wrapper">
+                      <span class="new-products__old-price">295₽</span>
+                      <span class="new-products__price">225₽</span>
+                    </div>
+                    <a class="new-products__button button" href="#">Заказать</a>
                   </div>
-                  <a class="new-products__button button" href="#">Заказать</a>
+                </div>
+              </div>
+              <div class="swiper-slide new-products__card">
+                <div class="new-products__image-container">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/slider-lavender-desktop.png">
+                    <source media="(min-width: 768px)" srcset="./img/slider-lavender-tablet.png">
+                    <img class="new-products__image" src="./img/slider-lavender.png" width="280" height="280" alt="Кофейный напиток Лавандовый Латте.">
+                  </picture>
+                </div>
+                <div class="new-products__card-container">
+                  <p class="new-products__subtitle subtitle">Новинка!</p>
+                  <h3 class="new-products__title">Лавандовый Латте</h3>
+                  <p class="new-products__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                  </p>
+                  <div class="new-products__wrapper">
+                    <div class="new-products__price-wrapper">
+                      <span class="new-products__old-price">285₽</span>
+                      <span class="new-products__price">265₽</span>
+                    </div>
+                    <a class="new-products__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide new-products__card">
+                <div class="new-products__image-container">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="./img/slider-espresso-desktop.png">
+                    <source media="(min-width: 768px)" srcset="./img/slider-espresso-tablet.png">
+                    <img class="new-products__image" src="./img/slider-espresso.png" width="280" height="280" alt="Кофейный напиток Тройной Эспрессо.">
+                  </picture>
+                </div>
+                <div class="new-products__card-container">
+                  <p class="new-products__subtitle subtitle">Новинка!</p>
+                  <h3 class="new-products__title">Тройной Эспрессо</h3>
+                  <p class="new-products__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                  </p>
+                  <div class="new-products__wrapper">
+                    <div class="new-products__price-wrapper">
+                      <span class="new-products__old-price">395₽</span>
+                      <span class="new-products__price">375₽</span>
+                    </div>
+                    <a class="new-products__button button" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="new-products__card">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="">
-                <source media="(min-width: 768px)" srcset="">
-                <img class="new-products__image" src="./img/slider-lavender.png" width="280" height="280" alt="Кофейный напиток Лавандовый Латте.">
-              </picture>
-              <p class="new-products__subtitle subtitle">Новинка!</p>
-              <h3 class="new-products__title">Лавандовый Латте</h3>
-              <p class="new-products__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-              </p>
-              <div class="new-products__wrapper">
-                <div class="new-products__price-wrapper">
-                  <span class="new-products__old-price">285₽</span>
-                  <span class="new-products__price">265₽</span>
-                </div>
-                <a class="new-products__button button" href="#">Заказать</a>
-              </div>
-            </div>
-            <div class="new-products__card">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="">
-                <source media="(min-width: 768px)" srcset="">
-                <img class="new-products__image" src="./img/slider-espresso.png" width="280" height="280" alt="Кофейный напиток Тройной Эспрессо.">
-              </picture>
-              <p class="new-products__subtitle subtitle">Новинка!</p>
-              <h3 class="new-products__title">Тройной Эспрессо</h3>
-              <p class="new-products__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-              </p>
-              <div class="new-products__wrapper">
-                <div class="new-products__price-wrapper">
-                  <span class="new-products__old-price">395₽</span>
-                  <span class="new-products__price">375₽</span>
-                </div>
-                <a class="new-products__button button" href="#">Заказать</a>
-              </div>
-            </div>
+            <div class="swiper__pagination"></div>
           </div>
+          <div class="swiper__button-prev"></div>
+          <div class="swiper__button-next"></div>
         </div>
       </section>
       <section class="index-main__advantages advantages">
@@ -455,6 +472,12 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/burger.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="js/leaflet.js"></script>
   </body>
 </html>
