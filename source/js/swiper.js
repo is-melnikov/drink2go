@@ -10,7 +10,7 @@ const swiper = new Swiper ('.swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper__button-forward',
-    prevEl: '.swiper__button-back',
+    nextEl: '.swiper-button-forward',
+    prevEl: '.swiper-button-back',
   },
 })
