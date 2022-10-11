@@ -3,6 +3,7 @@
   background-color: #f3ebe2;
 
   @media (min-width: @tablet-width) {
+    padding: 59px 80px 60px;
     position: relative;
     min-height: 828px;
     background-image: linear-gradient(#f3ebe1 75%, #ffffff 75% 100%);
@@ -74,9 +75,10 @@
   line-height: 48px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 16px;
+    margin: 0 0 16px 4px;
     font-size: 56px;
     line-height: 80px;
+    letter-spacing: 0.02em;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,6 +87,7 @@
 }
 
 .new-products__description {
+  width: 280px;
   margin: 0 auto 20px;
   text-align: center;
   font-size: 14px;
@@ -99,6 +102,12 @@
       margin: 0 auto 40px;
       text-align: start;
     }
+  }
+}
+
+.new-products__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
