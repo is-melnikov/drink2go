@@ -69,9 +69,12 @@
               <div class="swiper-slide new-products__card">
                 <div class="new-products__image-container">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="./img/slider-flat-white-desktop.webp 1x, ./img/slider-flat-white-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/slider-flat-white-tablet.webp 1x, ./img/slider-flat-white-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/slider-flat-white.webp 1x, ./img/slider-flat-white@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="./img/slider-flat-white-desktop.png">
                     <source media="(min-width: 768px)" srcset="./img/slider-flat-white-tablet.png">
-                    <img class="new-products__image" src="./img/slider-flat-white.png" width="280" height="280" alt="Кофейный напиток Декаф Флэт Уайт.">
+                    <img class="new-products__image" src="./img/slider-flat-white.png" srcset=".img/slider-flat-white@2x.png 2x" width="280" height="280" alt="Кофейный напиток Декаф Флэт Уайт.">
                   </picture>
                 </div>
                 <div class="new-products__card-container">
@@ -91,9 +94,12 @@
               <div class="swiper-slide new-products__card">
                 <div class="new-products__image-container">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="./img/slider-lavender-desktop.webp 1x, ./img/slider-lavender-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/slider-lavender-tablet.webp 1x, ./img/slider-lavender-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/slider-lavender.webp 1x, ./img/slider-lavender@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="./img/slider-lavender-desktop.png">
                     <source media="(min-width: 768px)" srcset="./img/slider-lavender-tablet.png">
-                    <img class="new-products__image" src="./img/slider-lavender.png" width="280" height="280" alt="Кофейный напиток Лавандовый Латте.">
+                    <img class="new-products__image" src="./img/slider-lavender.png" srcset=".img/slider-lavender@2x.png 2x" width="280" height="280" alt="Кофейный напиток Лавандовый Латте.">
                   </picture>
                 </div>
                 <div class="new-products__card-container">
@@ -113,9 +119,12 @@
               <div class="swiper-slide new-products__card">
                 <div class="new-products__image-container">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="./img/slider-espresso-desktop.webp 1x, ./img/slider-espresso-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/slider-espresso-tablet.webp 1x, ./img/slider-espresso-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/slider-espresso.webp 1x, ./img/slider-espresso@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="./img/slider-espresso-desktop.png">
                     <source media="(min-width: 768px)" srcset="./img/slider-espresso-tablet.png">
-                    <img class="new-products__image" src="./img/slider-espresso.png" width="280" height="280" alt="Кофейный напиток Тройной Эспрессо.">
+                    <img class="new-products__image" src="./img/slider-espresso.png" srcset=".img/slider-espresso@2x.png 2x" width="280" height="280" alt="Кофейный напиток Тройной Эспрессо.">
                   </picture>
                 </div>
                 <div class="new-products__card-container">
@@ -280,80 +289,110 @@
               <ul class="products__list">
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-white.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-white.webp 1x, ./img/decaf-flat-white@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-white.png" srcset=".img/decaf-flat-white@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-blue.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-blue.webp 1x, ./img/decaf-flat-blue@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-blue.png" srcset=".img/decaf-flat-blue@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-black.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-black.webp 1x, ./img/decaf-flat-black@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-black.png" srcset=".img/decaf-flat-black@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-violet.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-violet.webp 1x, ./img/decaf-flat-violet@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-violet.png" srcset=".img/decaf-flat-violet@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-brown.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-brown.webp 1x, ./img/decaf-flat-brown@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-brown.png" srcset=".img/decaf-flat-brown@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
                 <li class="products__item">
                   <a href="#" class="products__link">
-                    <img class="products__image" src="./img/decaf-flat-yellow.png" alt="Напиток Декаф Флэт Уайт">
+                    <picture>
+                      <source type="image/webp" srcset="./img/decaf-flat-yellow.webp 1x, ./img/decaf-flat-yellow@2x.webp 2x">
+                      <img class="products__image" src="./img/decaf-flat-yellow.png" srcset=".img/decaf-flat-yellow@2x.png 2x" alt="Напиток Декаф Флэт Уайт">
+                    </picture>
                     <h3 class="products__title">Декаф Флэт Уайт</h3>
                   </a>
                   <p class="products__description">Кофе без кофеина из Эфиопии<br> с натуральным фермерским молоком</p>
                   <div class="products__wrapper">
                     <b class="products__price">225₽</b>
-                    <button class="products__button button">В корзину<svg class="products__icon" width="20" height="16">
-                      <use xlink:href="img/sprite.svg#into-basket"></use>
-                    </svg></button>
+                    <button class="products__button button">В корзину
+                      <svg class="products__icon" width="20" height="16">
+                        <use xlink:href="img/sprite.svg#into-basket"></use>
+                      </svg>
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -466,7 +505,7 @@
       <div class="developer">
         <span class="developer__text">Разработано в</span>
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <svg class="developer__image" width="12" height="16">
+          <svg class="developer__image" width="12" height="16" role="img" aria-label="Логотип разработчика.">
             <use xlink:href="img/sprite.svg#developer"></use>
           </svg>
         </a>
