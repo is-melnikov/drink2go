@@ -6,13 +6,31 @@
   background-size: 100% auto;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    .page-header__logo {
+      background-image: url("../img/map-mobile@2x.jpg");
+    }
+  }
+
   @media (min-width: @tablet-width) {
     height: 480px;
     background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      .page-header__logo {
+        background-image: url("../img/map-tablet@2x.jpg");
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 540px;
     background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      .page-header__logo {
+        background-image: url("../img/map-desktop@2x.jpg");
+      }
+    }
   }
 }
